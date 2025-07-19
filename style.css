@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	display: flex;
+    margin: 0 auto;
+    max-width: 75%;
+}
+
+#settingsSection *, #controlSection * {
+	margin: 5px;
+	padding: 5px;
+}
+
+#dataSection {
+	display: grid;
+}
+
+#dataSection * {
+	margin: 5px;
+}
+
+.p5Canvas {
+	display: flex;
+    margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>Labyrinth Maker</title>
+		
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.min.js?v=1.11.8"></script>
+		<script src="main.js"></script>
+		<script src="square.js"></script>
+		
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<content>
+				<section id="settingsSection" >
+					<label for="labyrinthSizeValue">Labyrinth Size</label>
+					<input id="labyrinthSizeValue" type="number" value="800" onchange="SetCanvasSize()" />
+					
+					<label for="gridSizeValue">Grid Size</label>
+					<input id="gridSizeValue" type="number" value="20" onchange="SetCanvasSize()" />
+				</section>
+				<section id="controlSection" >
+					<button type="button" onclick="PickRandomStartEndPlaces()">Set Positions at Random</button>
+					<button type="button" onclick="StartTimedConstruction()">Start Timed Construction</button>
+					<button type="button" onclick="StartInstaConstruction()">Start Insta Construction</button>
+					<button type="button" onclick="RestartLabyrinth()">Restart Labyrinth</button>
+					<button type="button" onclick="StartProgram()">O</button>
+					<button type="button" onclick="StopProgram()">X</button>
+				</section>
+				<section id="dataSection" >
+					<p id="remainingSquaresText" >Remaining Squares: 0</p>
+					<p id="elapsedTimeText" >Elapsed Time: 0s</p>
+				</section>
+			</content>
+		</main>
+	</body>
+</html>
